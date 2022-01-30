@@ -43,8 +43,6 @@ div.days-left {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 30%;
 }
 
 .credit {
@@ -104,6 +102,9 @@ div.days-left {
   align-items: center;
   padding: 20px 0 20px 0;
   width: 100%;
+}
+.container-info span {
+  padding-left: 8px;
 }
 
 .avatar-container {
