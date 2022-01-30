@@ -8,8 +8,12 @@
 }
 
 body {
+  height: 100vh;
   background-color: var(--primary-bg-color);
   font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -42,6 +46,17 @@ p.costs {
 }
 .credit {
   color: var(--secondary-color);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+  float: none;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: var(--secondary-bg-color);
 }
 
 .card-image {
@@ -77,15 +92,6 @@ p.costs {
   cursor: pointer;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--secondary-bg-color);
-}
-
 .container-info {
   display: flex;
   flex-direction: row;
@@ -101,6 +107,7 @@ p.costs {
   align-items: center;
   border-top: 0.2px solid var(--primary-color);
   padding-top: 20px;
+  margin-bottom: 10px;
 }
 
 .image-avatar {
