@@ -26,24 +26,27 @@ h1:hover,
 .credit:hover {
   color: var(--hover-color);
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 p {
-  color: var(--primary-color);
-  font-size: 18px;
-  font-weight: 300;
   margin: 0;
 }
 
-p.costs {
+div.costs {
   color: var(--hover-color);
   font-weight: 600;
 }
+
+div.costs,
+div.days-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30%;
+}
+
 .credit {
   color: var(--secondary-color);
 }
@@ -51,11 +54,13 @@ p.costs {
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  max-width: 340px;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 300;
   margin: 0 auto;
-  float: none;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -114,10 +119,7 @@ p.costs {
   align-self: center;
   border: solid 2px white;
   border-radius: 50%;
-  width: 12%;
+  width: 100%;
+  max-width: 10%;
   margin-right: 15px;
-}
-
-.m-r {
-  margin-right: 5px;
 }
